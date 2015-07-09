@@ -1,0 +1,6 @@
+<h1>Items in stock</h1>
+<ul>
+	<% @items.each do |item| %>	
+		<li> <%= "#{item.name}" %> </li>
+	<% end %>
+</ul>

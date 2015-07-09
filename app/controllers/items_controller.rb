@@ -3,6 +3,10 @@ class ItemsController < ApplicationController
 
   # GET /items
   # GET /items.json
+  def available
+    @items = Item.all.where(available: true)
+  end
+
   def index
     @items = Item.all
   end
